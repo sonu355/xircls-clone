@@ -18,9 +18,10 @@ const NavbarThing = () =>{
             className="d-inline-block align-top"
           />
           <Nav className="ml-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Item style={{ marginRight: '20px' }} href="#home">Home</Nav.Item>
+            <Nav.Item>
             <Dropdown>
-              <Dropdown.Toggle as='span' id="about-us-dropdown">
+              <Dropdown.Toggle as='span' id="about-us-dropdown" style={{ marginRight: '20px' }}>
                 About Us
               </Dropdown.Toggle>
               <Dropdown.Menu>
@@ -29,8 +30,10 @@ const NavbarThing = () =>{
                 <Dropdown.Item href="#about-us/history">Vision and Mission</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
+            </Nav.Item>
+            <Nav.Item>
             <Dropdown>
-              <Dropdown.Toggle as='span' id="about-us-dropdown">
+              <Dropdown.Toggle as='span' id="about-us-dropdown" style={{ marginRight: '20px' }}>
                 Products
               </Dropdown.Toggle>
               <Dropdown.Menu>
@@ -39,10 +42,12 @@ const NavbarThing = () =>{
                 <Dropdown.Item href="#about-us/history">SNIPER</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link href="#pricing">Blog</Nav.Link>
-            <Nav.Link href="#pricing">Team</Nav.Link>
+            </Nav.Item>
+            <Nav.Item href="#pricing" style={{ marginRight: '20px' }}>Blog</Nav.Item>
+            <Nav.Item href="#pricing" style={{ marginRight: '20px' }}>Team</Nav.Item>
+            <Nav.Item>
             <Dropdown>
-              <Dropdown.Toggle as='span' id="about-us-dropdown">
+              <Dropdown.Toggle as='span' id="about-us-dropdown" style={{ marginRight: '20px' }}>
                 Sign Up
               </Dropdown.Toggle>
               <Dropdown.Menu>
@@ -50,8 +55,10 @@ const NavbarThing = () =>{
                 <Dropdown.Item href="#about-us/history">INFLUENCER</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
+            </Nav.Item>
+            <Nav.Item>
             <Dropdown>
-              <Dropdown.Toggle as='span' id="about-us-dropdown">
+              <Dropdown.Toggle as='span' id="about-us-dropdown" style={{ marginRight: '20px' }}>
                 Login
               </Dropdown.Toggle>
               <Dropdown.Menu>
@@ -59,6 +66,7 @@ const NavbarThing = () =>{
                 <Dropdown.Item href="#about-us/history">EMPLOYEE</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
+            </Nav.Item>
           </Nav>
         </Container>
       </Navbar>
