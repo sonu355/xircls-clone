@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Slider from './Slider';
 
 const Logo = require('../asset/logo.png')
 
@@ -70,6 +71,8 @@ const NavbarThing = () =>{
           </Nav>
         </Container>
       </Navbar>
+      <br /> 
+      <Slider />
     </>
   );
 }
