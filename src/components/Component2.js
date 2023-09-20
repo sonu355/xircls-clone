@@ -8,6 +8,11 @@ const img3 = require('../asset/com2img3.png')
 const Component2 = () => {
   return (
     <div className='py-6 my-5 container'>
+      <h2 className='second-font text-dark text-center mb-3'>
+        Drive high-quality traffic to your website.
+        <br />
+        Optimize for more conversions!
+      </h2>
       <h4 className='fourth-font text-dark text-center mb-4'>Leverage collaborations to transform your website sales funnel.</h4>
       <div className='my-5 px-md-3 row'>
         <div className='py-2 text-center col-md-4'>
