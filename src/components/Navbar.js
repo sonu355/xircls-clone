@@ -11,7 +11,7 @@ const Logo = require('../asset/logo.png')
 const NavbarThing = () =>{
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light">
+      <Navbar bg="light" data-bs-theme="light" >
         <Container>
           <img 
             src={Logo} alt={Logo}

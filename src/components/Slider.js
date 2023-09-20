@@ -1,12 +1,12 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Image = require('../asset/logo12.jpeg')
 
 const Slider = () => {
   return (
     <>
-    <Carousel data-bs-theme="dark" indicators={false} style={{ marginRight: '50px', marginLeft:'50px', height: '300px'}}>
+    <Carousel data-bs-theme="dark" indicators={false} style={{ marginRight: '50px', marginLeft:'50px', boxSizing: 'border-box'}}>
       <Carousel.Item>
         <div className='row align-items-start flex-md-row-reverse main-heading'>
             <div className='col-lg-3 text-left mb-4 flex-shrink-0'>
