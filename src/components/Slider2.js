@@ -18,6 +18,7 @@ const Slider2 = () => {
   return (
     <div className='pb-md-5 py-4 mt-2 mb-5 back-beige'>
         <div className='container'>
+            <div className='row'> 
         <Carousel>
             <Carousel.Item style={{ width: '187.5px',marginRight: '6px'}}>
                 <img src={image1} width="140px" alt='img1'></img>
@@ -54,6 +55,7 @@ const Slider2 = () => {
             <a className='btn sixth-font px-2 text-white button-1'  href='/'>JOIN THE NETWORK</a>
         </div> */}
         <Button style={{ backgroundColor: '#2e82cb', borderRadius: '500px', padding: '8px 26px!important'}}>Join The Network</Button>
+        </div>
         </div>
     </div>
     
