@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const img1 = require('../asset/Com5img1.jpg')
 const img2 = require('../asset/Com5img2.jpg')
