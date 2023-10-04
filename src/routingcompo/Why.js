@@ -1,19 +1,19 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "../components/Navbar";
+import NavbarThing from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Nav } from "react-bootstrap";
+
 const Logo = require("../asset/logo12.jpeg");
 
 const Why = () => {
   return (
     <div className="content-body">
-        <Navbar />
+        <NavbarThing />
         <div className="products text-dark bg-white">
             <div className="p-md-3 container">
                 <div className="pt-2 mb-5 pb-5 row">
                     <div className="text-center mx-auto col-md-12">
-                        <img src={Logo} className="page-logo" style={{ maxWidth: '220px'}}></img>
+                        <img src={Logo} alt='/' className="page-logo" style={{ maxWidth: '220px'}}></img>
                         <h1 className="my-2 main-font text-dark fw-bold">
                             WHY
                             <span style={{ color:'#2e82cb'}}> Collaborative Marketing</span>

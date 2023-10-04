@@ -9,14 +9,25 @@ import Component6 from "./components/Component6";
 import Component7 from "./components/Component7";
 import Component8 from "./components/Component8";
 import Component9 from "./components/Component9";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 import Slider2 from "./components/Slider2";
+import Why from "./routingcompo/Why";
+import Login  from "./routingcompo/Login";
+import Signup from "./routingcompo/Signup";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}/>
+          <Route path="/about" element={<Why />}/>
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/login" element={<Login />}/>
+        </Routes>
+      </BrowserRouter>
       <Slider />
       <Slider2 />
       <Component1 />

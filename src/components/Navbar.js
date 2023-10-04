@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from 'react-router-dom'
+
 const Logo = require("../asset/logo.png");
 
 const NavbarThing = () => {
@@ -18,8 +20,8 @@ const NavbarThing = () => {
             className="d-inline-block align-top"
           />
           <Nav className="ml-auto">
-            <Nav.Item style={{ marginRight: "20px" }} href="/">
-              Home
+            <Nav.Item style={{ marginRight: "20px" }} >
+              <Link to='/'>Home</Link>
             </Nav.Item>
             <Nav.Item>
               <Dropdown>
@@ -28,7 +30,7 @@ const NavbarThing = () => {
                   id="about-us-dropdown"
                   style={{ marginRight: "20px" }}
                 >
-                  About Us
+                  <Link to='/about'>About Us</Link>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="/">Why Xircls</Dropdown.Item>
@@ -65,45 +67,25 @@ const NavbarThing = () => {
             <Nav.Item href="#pricing" style={{ marginRight: "20px" }}>
               Team
             </Nav.Item>
-            <Nav.Item>
-              <Dropdown>
-                <Dropdown.Toggle
-                  as="span"
-                  id="about-us-dropdown"
-                  style={{ marginRight: "20px" }}
-                >
-                  Sign Up
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#about-us/team">MERCHANT</Dropdown.Item>
-                  <Dropdown.Item href="#about-us/history">
-                    INFLUENCER
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+            <Nav.Item style={{ marginRight:'20px'}}>
+                  <Link to='/signup'>Sign Up</Link>
             </Nav.Item>
-            <Nav.Item>
-              <Dropdown>
-                <Dropdown.Toggle
-                  as="span"
-                  id="about-us-dropdown"
-                  style={{ marginRight: "20px" }}
-                >
-                  Login
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#about-us/team">MERCHANT</Dropdown.Item>
-                  <Dropdown.Item href="#about-us/history">
-                    EMPLOYEE
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+            <Nav.Item style={{ marginRight: "20px" }}>
+                  <Link to='/login'>Login</Link>
             </Nav.Item>
           </Nav>
         </Container>
       </Navbar>
+
     </>
   );
 };
 
 export default NavbarThing;
+
+
+
+
+
+      
+     
