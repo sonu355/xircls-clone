@@ -29,6 +29,7 @@ const SmallSwi = () => {
                         disableOnInteraction: false
                     }}
                     navigation={false}
+                    
                     modules={[Pagination, Autoplay, Navigation]}
                     className='mySwiper'
             >
